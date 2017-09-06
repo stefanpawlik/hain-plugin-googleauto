@@ -1,0 +1,14 @@
+{
+  "name": "hain-plugin-googleauto",
+  "author": "Stefan Pawlik",
+  "version": "0.0.1",
+  "keywords": [
+    "hain-0.6.0"
+  ],
+  "hain": {
+    "prefix": "/ga",
+    "usage": "type /ga to google anything",
+    "icon": "#fa fa-link",
+    "redirect": "/ga"
+  }
+}
