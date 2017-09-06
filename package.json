@@ -6,9 +6,9 @@
     "hain-0.6.0"
   ],
   "hain": {
-    "prefix": "/ga",
-    "usage": "type /ga to google anything",
+    "prefix": "/g",
+    "usage": "type /g to receive google autocompletes and search on google",
     "icon": "#fa fa-link",
-    "redirect": "/ga"
+    "redirect": "/g"
   }
 }
