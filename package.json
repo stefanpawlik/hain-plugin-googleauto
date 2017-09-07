@@ -3,8 +3,15 @@
   "author": "Stefan Pawlik",
   "version": "0.0.2",
   "keywords": [
-    "hain-0.6.0"
+    "hain-0.6.0",
+    "hain",
+    "google",
+    "autocomplete"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/stefanpawlik/hain-plugin-googleauto.git"
+  },
   "hain": {
     "prefix": "/g",
     "usage": "type /g to receive google autocompletes and search on google",
