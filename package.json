@@ -1,10 +1,10 @@
 {
   "name": "hain-plugin-googleauto",
   "author": "Stefan Pawlik",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "keywords": [
-    "hain-0.6.0",
-    "hain",
+    "hain-0.5.0",
+    "hain0",
     "google",
     "autocomplete"
   ],
