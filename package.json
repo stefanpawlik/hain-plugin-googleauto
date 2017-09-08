@@ -3,7 +3,7 @@
   "author": "Stefan Pawlik",
   "version": "1.0.5",
   "keywords": [
-    "hain-0.5.0",
+    "hain-0.6.0",
     "hain0",
     "google",
     "autocomplete"
@@ -17,5 +17,8 @@
     "usage": "type /g to receive google autocompletes and search on google",
     "icon": "#fa fa-link",
     "redirect": "/g"
+  },
+  "dependencies": {
+    "google-autocomplete": "^0.0.1 "
   }
 }

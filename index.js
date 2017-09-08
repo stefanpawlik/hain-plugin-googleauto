@@ -1,6 +1,6 @@
 'use strict'
 
-const auto = require('./node_modules/google-autocomplete');
+const auto = require('google-autocomplete');
 
 module.exports = (pluginContext) => {
   const shell = pluginContext.shell;
