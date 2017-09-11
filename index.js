@@ -5,7 +5,6 @@ const auto = require('google-autocomplete');
 module.exports = (pluginContext) => {
   const shell = pluginContext.shell;
   const toast = pluginContext.toast;
-  const logger = pluginContext.logger;
 
 
   function objLength(obj){
@@ -19,22 +18,28 @@ module.exports = (pluginContext) => {
   }
 
   function search (query, res) {
-    const query_trim = query.trim()
+    const query_trim = query.trim();
 
     if (query_trim.length === 0) {
       return
     }
 
-    auto.getQuerySuggestions(query_trim, function(err, suggestions) {
-	       //logger.log(objLength(suggestions));
+    //res.header("Content-Type", "application/json; charset=utf-8");
+
+    res.add({
+      id: encodeURI(query_trim),
+      title: query_trim,
+      desc: "hit enter to search on google"
+    });
+
+    auto.getQuerySuggestions(utf8.encode(query_trim), function(err, suggestions) {
          var arrayLength = objLength(suggestions);
          for(var i=0; i<arrayLength; i++){
-           logger.log(suggestions[i].suggestion);
            res.add({
               id: encodeURI(suggestions[i].suggestion),
               title: suggestions[i].suggestion,
-              desc: 'Please wait a second'
-  });
+              desc: 'hit enter do search on google'
+            });
          }
    });
  }
