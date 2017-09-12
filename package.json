@@ -1,7 +1,8 @@
 {
   "name": "hain-plugin-googleauto",
   "author": "Stefan Pawlik",
-  "version": "1.0.5",
+  "version": "1.0.8",
+  "description": "Hain plugin to Google search any expression. It also displays Google autocomplete suggestions",
   "keywords": [
     "hain-0.6.0",
     "hain0",

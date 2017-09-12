@@ -27,16 +27,16 @@ module.exports = (pluginContext) => {
     //res.header("Content-Type", "application/json; charset=utf-8");
 
     res.add({
-      id: encodeURI(query_trim),
+      id: query_trim,
       title: query_trim,
       desc: "hit enter to search on google"
     });
 
-    auto.getQuerySuggestions(utf8.encode(query_trim), function(err, suggestions) {
+    auto.getQuerySuggestions(query_trim, function(err, suggestions) {
          var arrayLength = objLength(suggestions);
          for(var i=0; i<arrayLength; i++){
            res.add({
-              id: encodeURI(suggestions[i].suggestion),
+              id: suggestions[i].suggestion,
               title: suggestions[i].suggestion,
               desc: 'hit enter do search on google'
             });
